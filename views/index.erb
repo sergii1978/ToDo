@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #121212; color: white; }
+    .card { background-color: #1e1e1e; border: none; }
+    .form-control, .btn { border-radius: 0; }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="mb-4">📝 To-Do List</h1>
+    <div class="card p-4 mb-4">
+      <form id="todo-form">
+        <div class="form-row">
+          <div class="col-sm-6 mb-2">
+            <input type="text" id="task" class="form-control" placeholder="Введіть задачу" required>
+          </div>
+          <div class="col-sm-3 mb-2">
+            <input type="date" id="date" class="form-control">
+          </div>
+          <div class="col-sm-3 mb-2">
+            <button type="submit" class="btn btn-primary btn-block">Додати</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <ul id="task-list" class="list-group"></ul>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
